@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">WELCOME TO HAPPY HAUL</h1>
+    <p>"HappyHaul" creates a friendly and positive image, suggesting that users can find what they need and enjoy the process along the way.</p>
+    @if (TempData.ContainsKey("username"))
+    {
+        <div class="alert alert-success">
+            Welcome @TempData["username"]
+        </div>
+    }
+</div>
